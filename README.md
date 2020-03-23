@@ -1,7 +1,7 @@
 # MLPROJECT
-Pratical Machine Learning
+# Pratical Machine Learning
 
-Import Libraries
+# Import Libraries
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -24,7 +24,7 @@ from sklearn.metrics import confusion_matrix
 import warnings
 warnings.filterwarnings('ignore')
 
-Download Data
+# Download Data
 The original training and test data has 160 variables.
 The columns with NA entries have been removed. Five (5) variables were removed.
 
@@ -42,7 +42,7 @@ Train data line and colum: (406, 160)
 
 
 
-Train Test Split
+# Train Test Split
 We will divide our dataset into training and test splits, which gives us a better idea as to how our algorithm performed during the testing phase.
 This way our algorithm is tested on un-seen data, as it would be in a production application.
 
@@ -79,14 +79,14 @@ print (X_test.shape)
 
 
 
-Model
+# Model
 The first step is to import the DecisionTreeClassifier class from the sklearn.neighbors library.
 In the second line, this class is initialized with one parameter.
 This is basically the value for the K.
 There is no ideal value for K and it is selected after testing and evaluation, however to start out, 5 seems to be the most commonly used value for DECISION TREE algorithm.
 After all the work of data preparation, creating and training the model DECISION TREE regression model and fit the model on the training data.
 
-Predictions
+# Predictions
 It is extremely straight forward to train the DECISION TREE algorithm and make predictions.
 
 # Tree classifer 
@@ -102,7 +102,7 @@ y_predc
 B A B A A E D B A A B C B A E E A B B B
 
 
-Evaluating the Algorithm
+# Evaluating the Algorithm
 For evaluating an algorithm, confusion matrix, precision, recall and score are the most commonly used metrics.    ACCURACY 0.6311475409836066
 
 
@@ -114,7 +114,7 @@ print("METRICS")
 print(classification_report(y_test, y_predc))
 print("")
 
-#Cria a árvore de decisão e calcula a curácia
+# ACCURACY
 print("ACCURACY")
 from sklearn import tree
 
@@ -146,7 +146,7 @@ ACCURACY
 0.6311475409836066
 
 
-Conclusion
+# Conclusion
 DECISION TREE is a simple yet powerful classification algorithm.
 It requires no training for making predictions, which is typically one of the most difficult parts of a machine learning algorithm.
 The DECISION TREE algorithm have been widely used to find document similarity and pattern recognition.
