@@ -89,7 +89,7 @@
 # Model
 #### The first step is to import the DecisionTreeClassifier class from the sklearn.neighbors library. In the second line, this class is 
 #### initialized with one parameter. After all the work of data preparation, creating and training the model DECISION TREE regression 
-#### model # and fit the model on the training data.
+#### model and fit the model on the training data.
 
 
 # Predictions
