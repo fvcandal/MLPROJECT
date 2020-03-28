@@ -75,7 +75,7 @@
 
 #### Columns present in the dataset 
 ####  print(df.columns)
-####  Index(['Unnamed: 0', 'user_name', 'raw_timestamp_part_1',
+      Index(['Unnamed: 0', 'user_name', 'raw_timestamp_part_1',
        'raw_timestamp_part_2', 'cvtd_timestamp', 'new_window', 'num_window',
        'roll_belt', 'pitch_belt', 'yaw_belt',
        ...
@@ -88,8 +88,7 @@
 
 # Model
 #### The first step is to import the DecisionTreeClassifier class from the sklearn.neighbors library. In the second line, this class is 
-#### initialized with one parameter. After all the work of data preparation, creating and training the model DECISION TREE regression 
-model and fit the model on the training data.
+initialized with one parameter. After all the work of data preparation, creating and training the model DECISION TREE regression model and fit the model on the training data.
 
 
 # Predictions
