@@ -1,71 +1,71 @@
 # Pratical Machine Learning
-# Import Libraries
+## Import Libraries
 
-# Importing Libraries
-# import matplotlib.pyplot as plt
-# import pandas as pd
-# import seaborn as sns
-# import numpy as np
-# import math
+## Importing Libraries
+## import matplotlib.pyplot as plt
+## import pandas as pd
+## import seaborn as sns
+## import numpy as np
+## import math
 
-# from sklearn.model_selection import cross_val_score
-# from sklearn.model_selection import train_test_split 
-# from sklearn import metrics 
+## from sklearn.model_selection import cross_val_score
+## from sklearn.model_selection import train_test_split 
+## from sklearn import metrics 
 
-# from sklearn import tree
-# from sklearn.tree import DecisionTreeClassifier
+## from sklearn import tree
+## from sklearn.tree import DecisionTreeClassifier
 
-# from sklearn.metrics import classification_report
-# from sklearn.metrics import accuracy_score
-# from sklearn.metrics import confusion_matrix
+## from sklearn.metrics import classification_report
+## from sklearn.metrics import accuracy_score
+## from sklearn.metrics import confusion_matrix
 
-# import warnings
-# warnings.filterwarnings('ignore')
+## import warnings
+## warnings.filterwarnings('ignore')
 
-# Download Data
-# The original training and test data has 160 variables.
-# The columns with NA entries have been removed. Five (5) variables were removed.
+## Download Data
+## The original training and test data has 160 variables.
+## The columns with NA entries have been removed. Five (5) variables were removed.
 
-# Importing the Dataset 
-# df = pd.read_csv('pml-training.csv')
+## Importing the Dataset 
+## df = pd.read_csv('pml-training.csv')
 
-# Clear all null data
-# df.dropna(inplace=True)
+## Clear all null data
+## df.dropna(inplace=True)
 
-# Total rows and columns 
-# print("Train data line and colum: {}".format(df.shape))
-# Train data line and colum: (406, 160)
+## Total rows and columns 
+## print("Train data line and colum: {}".format(df.shape))
+## Train data line and colum: (406, 160)
 
-# Train Test Split
-# We will divide our dataset into training and test splits, which gives us a better idea as to how our algorithm performed during the  
-# testing phase. This way our algorithm is tested on un-seen data, as it would be in a production application.
+## Train Test Split
+## We will divide our dataset into training and test splits, which gives us a better idea as to how our algorithm performed during the  
+## testing phase. This way our algorithm is tested on un-seen data, as it would be in a production application.
 
-# Preprocessing
-# The next step is to split our dataset into its attributes and labels
+## Preprocessing
+## The next step is to split our dataset into its attributes and labels
 
-# cols = ['raw_timestamp_part_1',
-# 'raw_timestamp_part_2',
-# 'num_window',
-# 'roll_belt',
-# 'pitch_belt',	
-# 'yaw_belt',
-# 'gyros_forearm_x',
-# 'gyros_forearm_y',
-# 'gyros_forearm_z',
-# 'accel_forearm_x',
-# 'accel_forearm_y',
-# 'accel_forearm_z',
-# 'magnet_forearm_x',
-# 'magnet_forearm_y',
-# 'magnet_forearm_z']
+## cols = ['raw_timestamp_part_1',
+## 'raw_timestamp_part_2',
+## 'num_window',
+## 'roll_belt',
+## 'pitch_belt',	
+## 'yaw_belt',
+## 'gyros_forearm_x',
+## 'gyros_forearm_y',
+## 'gyros_forearm_z',
+## 'accel_forearm_x',
+## 'accel_forearm_y',
+## 'accel_forearm_z',
+## 'magnet_forearm_x',
+## 'magnet_forearm_y',
+## 'magnet_forearm_z']
 
 
-# X = df[cols]
-# y = df.classe
+## X = df[cols]
+## y = df.classe
 
-# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30,random_state=0)
+## X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30,random_state=0)
 
-# print (X_train.shape)
+## print (X_train.shape)
 # (284, 15)
 
 # print (X_test.shape)
