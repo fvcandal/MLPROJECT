@@ -156,7 +156,7 @@
 
 
 # Conclusion
-# DECISION TREE is a simple yet powerful classification algorithm.
-# It requires no training for making predictions, which is typically one of the most difficult parts of a machine learning algorithm.
-# The DECISION TREE algorithm have been widely used to find document similarity and pattern recognition.
-v It has also been employed for developing recommender systems and for dimensionality reduction and pre-processing steps.
+## DECISION TREE is a simple yet powerful classification algorithm.
+## It requires no training for making predictions, which is typically one of the most difficult parts of a machine learning algorithm.
+## The DECISION TREE algorithm have been widely used to find document similarity and pattern recognition.
+## It has also been employed for developing recommender systems and for dimensionality reduction and pre-processing steps.
