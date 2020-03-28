@@ -94,12 +94,14 @@ initialized with one parameter. After all the work of data preparation, creating
 # Predictions
 #### It is extremely straight forward to train the DECISION TREE algorithm and make predictions. I did the cross validation and predicted a test set. 
 
+
 #### Cross Validation
 #### print("-- 10-fold cross-validation " "[using setup from previous post]")
 #### dt_old = DecisionTreeClassifier(min_samples_split=20,random_state=99)
 #### dt_old = dt_old.fit(X, y)
 #### scores = cross_val_score(dt_old, X, y, cv=10)
 #### print("mean: {:.3f} (std: {:.3f})".format(scores.mean(),scores.std()),end="\n\n" )
+
 
 #### predict set of tests
 #### y_predc = dt_old.predict(X_test)
@@ -114,6 +116,7 @@ initialized with one parameter. After all the work of data preparation, creating
 #### For evaluating an algorithm, confusion matrix, precision, recall and score are the most commonly used metrics. 
 #### ACCURACY: 0.8688
 
+
 #### from sklearn.metrics import classification_report, confusion_matrix
 #### print("CONFUSION MATRIX")
 #### print(confusion_matrix(y_test, y_predc))
@@ -122,15 +125,19 @@ initialized with one parameter. After all the work of data preparation, creating
 #### print(classification_report(y_test, y_predc))
 #### print("")
 
+
 #### calculates accuracy
 #### print("ACCURACY")
 #### from sklearn import tree
+
 
 #### cfl = tree.DecisionTreeClassifier()
 #### clf = clf.fit(X_train, y_train)
 #### clf.score(X_test,y_test)
 
+
 #### accuracy_score(y_test, dt_old.predict(X_test))
+
 
 #### CONFUSION MATRIX
 #### [[29  5  0  3  1]
